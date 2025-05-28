@@ -7,15 +7,15 @@
         <div class="nav-container">
             <el-menu :default-active="activeIndex" class="el-menu-vertical-demo" @select="handleSelect">
                 <el-menu-item index="1" @click="toPage('/user')">
-                    <i class="el-icon-setting"></i>
+                    <i class="el-icon-menu"></i>
                     <span slot="title">首页</span>
                 </el-menu-item>
                 <el-menu-item index="2" @click="toPage('/driverratinguser')">
-                    <i class="el-icon-setting"></i>
+                    <i class="el-icon-s-order"></i>
                     <span slot="title">工作记录</span>
                 </el-menu-item>
                 <el-menu-item index="3" @click="toPage('/scheduleUser')">
-                    <i class="el-icon-setting"></i>
+                    <i class="el-icon-date"></i>
                     <span slot="title">排班表</span>
                 </el-menu-item>
                 <div class="logout-wrapper">

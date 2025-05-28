@@ -16,31 +16,31 @@
                         <span>系统管理</span>
                     </template>
                     <el-menu-item index="2-1" @click="toPage('/driver')">
-                        <i class="el-icon-setting"></i>
+                        <i class="el-icon-user"></i>
                         <span slot="title">司机</span>
                     </el-menu-item>
                     <el-menu-item index="2-2" @click="toPage('/vehicle')">
-                        <i class="el-icon-setting"></i>
+                        <i class="el-icon-truck"></i>
                         <span slot="title">车辆</span>
                     </el-menu-item>
                     <el-menu-item index="2-3" @click="toPage('/route')">
-                        <i class="el-icon-setting"></i>
+                        <i class="el-icon-rank"></i>
                         <span slot="title">线路</span>
                     </el-menu-item>
                     <el-menu-item index="2-4" @click="toPage('/site')">
-                        <i class="el-icon-setting"></i>
+                        <i class="el-icon-map-location"></i>
                         <span slot="title">站点</span>
                     </el-menu-item>
                     <el-menu-item index="2-5" @click="toPage('/driverrating')">
-                        <i class="el-icon-setting"></i>
+                        <i class="el-icon-s-order"></i>
                         <span slot="title">工作记录</span>
                     </el-menu-item>
                     <el-menu-item index="2-6" @click="toPage('/maintenance')">
-                        <i class="el-icon-setting"></i>
+                        <i class="el-icon-finished"></i>
                         <span slot="title">维修记录</span>
                     </el-menu-item>
                     <el-menu-item index="2-7" @click="toPage('/schedule')">
-                        <i class="el-icon-setting"></i>
+                        <i class="el-icon-date"></i>
                         <span slot="title">排班表</span>
                     </el-menu-item>
                 </el-submenu>

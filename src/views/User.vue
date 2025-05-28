@@ -97,7 +97,7 @@
                                     </el-descriptions-item>
                                     <el-descriptions-item>
                                         <template slot="label">
-                                            <i class="el-icon-mobile-phone"></i>
+                                            <i class="el-icon-user"></i>
                                             性别
                                         </template>
                                         {{ userform.gender }}
@@ -111,21 +111,21 @@
                                     </el-descriptions-item>
                                     <el-descriptions-item>
                                         <template slot="label">
-                                            <i class="el-icon-location-outline"></i>
+                                            <i class="el-icon-office-building"></i>
                                             户籍
                                         </template>
                                         {{ userform.residence }}
                                     </el-descriptions-item>
                                     <el-descriptions-item>
                                         <template slot="label">
-                                            <i class="el-icon-location-outline"></i>
+                                            <i class="el-icon-user"></i>
                                             年龄
                                         </template>
                                         {{ userform.age }}
                                     </el-descriptions-item>
                                     <el-descriptions-item>
                                         <template slot="label">
-                                            <i class="el-icon-location-outline"></i>
+                                            <i class="el-icon-date"></i>
                                             入职时间
                                         </template>
                                         {{ userform.hire_date }}
@@ -147,14 +147,14 @@
                                     </el-descriptions-item>
                                     <el-descriptions-item>
                                         <template slot="label">
-                                            <i class="el-icon-mobile-phone"></i>
+                                            <i class="el-icon-user"></i>
                                             用户名
                                         </template>
                                         {{ userzhanghao.username }}
                                     </el-descriptions-item>
                                     <el-descriptions-item>
                                         <template slot="label">
-                                            <i class="el-icon-mobile-phone"></i>
+                                            <i class="el-icon-lock"></i>
                                             密码
                                         </template>
                                         {{ userzhanghao.password }}

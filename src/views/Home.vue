@@ -199,7 +199,7 @@ export default {
 
 .bottom-card {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: normal;
   height: 80%;
   width: 100%;
