@@ -23,28 +23,32 @@
       <div class="bottom">
         <el-row :gutter="20"> <!-- 添加 gutter 为卡片添加间距 -->
           <el-col :span="6">
-            <el-card shadow="hover" class="bottom-card" @click.native="todriver">
-              <h3>司机</h3>
-              {{ alldata.driver_number }}
-            </el-card>
+            <div class="card" @click="todriver">
+              <h3>-----司机-----</h3>
+              <div class="card-number">{{ alldata.driver_number }}</div>
+              <h3>----------------</h3>
+            </div>
           </el-col>
           <el-col :span="6">
-            <el-card shadow="hover" class="bottom-card" @click.native="tovehicle">
-              <h3>车辆</h3>
-              {{ alldata.vehicle_number }}
-            </el-card>
+            <<div class="card" @click="tovehicle">
+              <h3>-----车辆-----</h3>
+              <div class="card-number">{{ alldata.vehicle_number }}</div>
+              <h3>----------------</h3>
+            </div>
           </el-col>
           <el-col :span="6">
-            <el-card shadow="hover" class="bottom-card" @click.native="toroute">
-              <h3>线路</h3>
-              {{ alldata.route_number }}
-            </el-card>
+            <div class="card" @click="toroute">
+              <h3>-----线路-----</h3>
+              <div class="card-number">{{ alldata.route_number }}</div>
+              <h3>----------------</h3>
+            </div>
           </el-col>
           <el-col :span="6">
-            <el-card shadow="hover" class="bottom-card" @click.native="tosite">
-              <h3>站点</h3>
-              {{ alldata.site_number }}
-            </el-card>
+            <div class="card" @click="tosite">
+              <h3>-----站点-----</h3>
+              <div class="card-number">{{ alldata.site_number }}</div>
+              <h3>----------------</h3>
+            </div>
           </el-col>
         </el-row>
       </div>
@@ -82,7 +86,7 @@ export default {
   },
   methods: {
     setScreenSize() {
-      
+
     },
 
     fetchDrivers() {
@@ -118,7 +122,7 @@ export default {
 }
 </script>
 
-<style >
+<style scoped>
 .container {
   display: flex;
   align-items: center;
@@ -303,5 +307,63 @@ export default {
 
 .el-carousel__item:nth-child(4n+3) {
   background-color: #d0ffcd !important;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column; /* 修改这里 */
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: rgb(193, 237, 251);
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.card:hover:after {
+  content: "前往";
+}
+
+.card-number{
+  font-size: 50px;
+  color: #79c3f5; /* 字体颜色 */
 }
 </style>
