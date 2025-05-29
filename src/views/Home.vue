@@ -294,19 +294,27 @@ export default {
 }
 
 .el-carousel__item:nth-child(4n) {
+  background-image: url('@/assets/background.jpg');
   background-color: #ffd78e !important;
+  background-size: cover;
 }
 
 .el-carousel__item:nth-child(4n+1) {
+  background-image: url('@/assets/background.jpg');
   background-color: #ffc7f1 !important;
+  background-size: cover;
 }
 
 .el-carousel__item:nth-child(4n+2) {
+  background-image: url('@/assets/background.jpg');
   background-color: #c8f6ff !important;
+  background-size: cover;
 }
 
 .el-carousel__item:nth-child(4n+3) {
+  background-image: url('@/assets/background.jpg');
   background-color: #d0ffcd !important;
+  background-size: cover;
 }
 
 .card {
