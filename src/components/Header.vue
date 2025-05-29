@@ -2,7 +2,7 @@
     <div class="leftbody">
         <div class="userava">
             <el-image style="width: 100px; height: 100px" :src="require('@/assets/buslogo.png')" fit="fill"></el-image>
-            <h3>公交车管理系统</h3>
+            <h3>系统管理员</h3>
         </div>
         <div class="nav-container">
             <el-menu :default-active="activeIndex" class="el-menu-vertical-demo" @select="handleSelect">

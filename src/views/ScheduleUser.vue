@@ -142,7 +142,7 @@ export default {
   display: flex;
   align-items: center;
   width: 100%;
-  min-width: 1400px;
+  min-width: 1500px;
   height: 900px;
   margin: 0;
   padding: 0;
