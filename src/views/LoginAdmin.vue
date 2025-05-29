@@ -37,7 +37,7 @@ export default {
       if (this.loginForm.login_name === '' || this.loginForm.password === '') {
         this.$message.error('账号或密码不能为空');
         return;
-      } else if (this.loginForm.login_name === '123' && this.loginForm.password === '123') {
+      } else if (this.loginForm.login_name === 'admin' && this.loginForm.password === 'admin') {
         this.$message({
           message: '成功登录',
           type: 'success'

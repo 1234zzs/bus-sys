@@ -289,7 +289,7 @@ export default {
     },
     methods: {
         setScreenSize() {
-            
+
         },
 
         fetchDrivers() {
@@ -420,16 +420,16 @@ export default {
 
 <style scoped>
 .container {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-width: 1500px;
-  height: 900px;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(228, 243, 255);
-  top: 0;
-  left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 1500px;
+    height: 900px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(228, 243, 255);
+    top: 0;
+    left: 0;
 }
 
 .centerbody {
@@ -518,7 +518,8 @@ export default {
     justify-content: space-between;
     width: 100%;
     height: 60%;
-    min-height: 0; /* 防止内容溢出 */
+    min-height: 0;
+    /* 防止内容溢出 */
 }
 
 .userzhanghao {
@@ -527,7 +528,8 @@ export default {
     justify-content: space-between;
     width: 100%;
     height: 40%;
-    min-height: 0; /* 防止内容溢出 */
+    min-height: 0;
+    /* 防止内容溢出 */
 }
 
 /* 确保描述组件内部也能自适应高度 */
@@ -545,7 +547,8 @@ export default {
 /* 表格主体 */
 .el-descriptions__table {
     flex: 1;
-    height: 0; /* 让表格可以伸缩 */
+    height: 0;
+    /* 让表格可以伸缩 */
 }
 
 .el-descriptions-item__container {
@@ -638,18 +641,26 @@ export default {
 }
 
 .el-carousel__item:nth-child(4n) {
+    background-image: url('@/assets/background.jpg');
     background-color: #ffd78e !important;
+    background-size: cover;
 }
 
 .el-carousel__item:nth-child(4n+1) {
+    background-image: url('@/assets/background.jpg');
     background-color: #ffc7f1 !important;
+    background-size: cover;
 }
 
 .el-carousel__item:nth-child(4n+2) {
+    background-image: url('@/assets/background.jpg');
     background-color: #c8f6ff !important;
+    background-size: cover;
 }
 
 .el-carousel__item:nth-child(4n+3) {
+    background-image: url('@/assets/background.jpg');
     background-color: #d0ffcd !important;
+    background-size: cover;
 }
 </style>
